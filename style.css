@@ -1,0 +1,127 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+#main{
+	width:100%;
+    height:100%;
+}
+#header{
+	width:100%;
+	height:11%;
+	background:darkorange;
+ }
+#head1{
+    float:left;
+	width:10%;
+    height:40%;
+	margin-top:0.5%;
+	margin-bottom:0.5%;
+	margin-left:20%;
+	background:gray;
+}
+#head2{
+	float:right;
+	width:20%;
+    height:40%;
+	margin-top:0.5%;
+	margin-bottom:0.5%;
+	margin-right:20%;
+	background:gray
+}
+#head3{
+       clear:both;
+	   width:60%;
+       height:40%;
+       background:gray;
+       margin-left:20%;
+}
+#container{
+	width:60%;
+	height:86%;
+	margin-left:20%;
+}
+	#title{
+		width:100%;
+		height:3.5%;
+		background:gray;
+		margin-top:0.5%;
+	}
+	#content{
+		margin-top:0.5%;
+		height:95.5%;
+		width:100%;	
+	}
+		#nav{
+			background:lightgray;
+			width:30%;
+			height:99.5%;	
+			float:left;
+			margin-bottom:0.5%;
+		}
+		#boxes{
+			width:70%;
+			height:100%;
+			float:left;
+		}
+#footer{
+	clear:both;
+    width:100%;
+    height:3%;	
+	background:darkorange;
+}
+#foot{
+	height:100%;
+	width:60%;
+	margin: 0% 20%;
+	background:gray;
+}
+.box1,.box2,.box3,.box4{
+	float:left;
+	width:24.5%;
+	height:32.83%;
+	margin-left:0.5%;
+	margin-bottom:0.5%;
+	background:grey;	
+}
+
+@media only screen  and (max-device-width : 1000px) {
+		
+		
+			#boxes{
+				overflow:scroll;
+			}
+				.box1,.box2,.box3,.box4{
+					width:32.83%;
+					float:left;
+				}
+}				
+
+@media only screen  and (max-device-width : 480px) {
+	
+	#nav{
+				width:100%;
+				height:29.5%;				
+			}
+			#boxes{
+				clear:both;
+				width:100%;
+				height:70%;
+				overflow:scroll;			
+			}
+			
+	#head3, #container, #foot{
+		width:100%;
+		margin:0;
+	}
+	#head1, #head2{
+		margin:0.5% 0%;
+	}
+		.box1,.box2,.box3,.box4{
+					width:49.5%;
+					height:50%;
+					float:left;
+				}
+		
+}
